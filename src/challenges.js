@@ -5,12 +5,24 @@ function compareTrue(valor,valor2 ) {
   else [condicao = false]
  return condicao
 }
+/*      OOOOOOOOUUUUU
+if(valor1 == true && valor2  == true){result = true}
+else if (valor1 == false && valor2 == true){result = false}
+else if (valor1 == true && valor2 == false){result = false} 
+else if (valor1 == false && valor2 == false){result = false}
+else if(valor1 != true && valor2 !== true){result = false}
+*/
 
 //iniciando proje
 // Desafio 2
-function calcArea() {
+function calcArea(base, height) {
+//let vezesArea =  base * height 
+//let  total = vezesArea / 2
   // seu código aqui
+let total = (base * height) / 2
+  return total
 }
+
 
 // Desafio 3
 function splitSentence() {
