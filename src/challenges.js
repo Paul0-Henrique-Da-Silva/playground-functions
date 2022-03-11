@@ -23,12 +23,14 @@ let total = (base * height) / 2
   return total
 }
 
-
 // Desafio 3
-function splitSentence() {
+function splitSentence(string) {
+  let arrayDeSplit = string.split(' ')
   // seu código aqui
+ //return  resultado = string.split('')
+  return arrayDeSplit;
 }
-
+//splitSentence('vai chapeco')
 // Desafio 4
 function concatName() {
   // seu código aqui
