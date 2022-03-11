@@ -2,7 +2,7 @@
 function compareTrue() {
   // seu código aqui
 }
-
+//iniciando proje
 // Desafio 2
 function calcArea() {
   // seu código aqui
