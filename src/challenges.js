@@ -46,9 +46,16 @@ function concatName(itens) {
 }
 
 // Desafio 5
-function footballPoints() {
+function footballPoints(wins , ties) {
+ 
+    if(wins*3 + ties >= 50){return pontos = 50}
+    else if (wins*3 + ties >= 5 ){return pontos = 5}
+    else if (wins*3 + ties == 0) {return pontos = 0}
+   
   // seu código aqui
 }
+//footballPoints(18,8)
+
 
 // Desafio 6
 function highestCount() {
