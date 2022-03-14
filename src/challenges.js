@@ -20,7 +20,7 @@ function calcArea(base, height) {
 //let  total = vezesArea / 2
   // seu código aqui
 let total = (base * height) / 2
-  return total
+  return total;
 }
 
 // Desafio 3
@@ -60,16 +60,47 @@ function footballPoints(wins , ties) {
 // Desafio 6
 function highestCount() {
   // seu código aqui
+//  for (index = 0; index > array.length; index++){
+//    for (index2 = 0;index2 = array.lenght; index++){
+//    if (array.length[index] == array.length[index2]){
+//      repeti.push =+ array.lenght[index] 
+//    }
+//  }
+//  return repeti
+//}
+ //let numeroR =[]
+ //for (index = 0; index > array.lenght; index ++){
+ //  if (array.lenght[index] === array.Math.max(...array)) {
+ //    numerosR += array.lenght[index];
+//   }
+// }
+ ///return console.log(numerosR)
+///}
+//highestCount(1,14,13,16,13)
 }
 
-// Desafio 7
-function catAndMouse() {
-  // seu código aqui
+// Desafio 7 cat1 6,cat2 12 retorn cat1
+function catAndMouse(mouse,cat1,cat2) {
+ //let vCat1 = cat1 - mouse;
+ //let vCat2 = cat2 - mouse;
+if (cat2 - mouse < cat1) {return cat2 = "cat2"}
+else if (cat1 - mouse < cat2) { return cat1 = "cat1" }
+else if ( cat1 == mouse && cat2 == mouse ) 
+{ return cat1 = 'os gatos trombam e o rato foge'}
+
+
+  //if(mouse < cat2 && mause < cat1){pegou =  console.log("cat1")}
+//else if (cat2 < cat1 && mause <= cat2){pegou = console.log("cat2")}
+//else if (cat1 == mause && cat2 == mause) {pegou = console.log("os gatos trombam e o rato foge")}
+//return pegou  
+// seu código aqui 
 }
+
 
 // Desafio 8
-function fizzBuzz() {
+function fizzBuzz(array) {
   // seu código aqui
+  
 }
 
 // Desafio 9
