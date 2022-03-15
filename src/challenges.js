@@ -60,7 +60,7 @@ function footballPoints(wins , ties) {
 // Desafio 6
 function highestCount() {
   // seu código aqui
-/*let array = [4,6,7,3,6,3,9,9]
+let array = [4,6,7,3,6,3,9,9]
 let repeti = []
 for (let i = 0; i < array.length; i+=1){
    for (let i2 = 0;i2 < array.lenght; i2+=1){
@@ -70,8 +70,8 @@ for (let i = 0; i < array.length; i+=1){
   }
      console.log(repeti)
 }   
- */
-}
+
+
 //  }
 //  return repeti
 //}
@@ -88,11 +88,11 @@ for (let i = 0; i < array.length; i+=1){
 
 // Desafio 7 cat1 6,cat2 12 retorn cat1 
 function catAndMouse(mouse,cat1,cat2) {
- let vCat1 = cat1 - mouse;
- let vCat2 = cat2 - mouse;
+ let vCat1 = Math.abs(cat1 - mouse)
+ let vCat2 = Math.abs(cat2 - mouse)
 if (vCat1 < vCat2) {return  "cat1"}
 else if (vCat2 < vCat1) { return "cat2" }
-else { return 'os gatos trombam e o rato foge'}
+else { return "os gatos trombam e o rato foge"}
 
 }
   //if(mouse < cat2 && mause < cat1){pegou =  console.log("cat1")}
