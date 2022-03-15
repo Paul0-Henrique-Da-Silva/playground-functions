@@ -58,13 +58,18 @@ function footballPoints(wins , ties) {
 
 
 // Desafio 6
-function highestCount() {
+//function highestCount(...array) {
   // seu código aqui
-//  for (index = 0; index > array.length; index++){
-//    for (index2 = 0;index2 = array.lenght; index++){
-//    if (array.length[index] == array.length[index2]){
-//      repeti.push =+ array.lenght[index] 
-//    }
+let array = [4,6,7,3,6,3,9,9]
+let repeti = []
+for (let i = 0; i < array.length; i+=1){
+   for (let i2 = 0;i2 < array.lenght; i2+=1){
+     if(array[i] == array[i2].t && array[i] >= array[i2])
+     {repeti.push(array[i2])}
+   }
+  }
+     console.log(repeti)
+  
 //  }
 //  return repeti
 //}
@@ -77,34 +82,50 @@ function highestCount() {
  ///return console.log(numerosR)
 ///}
 //highestCount(1,14,13,16,13)
-}
+//}
 
-// Desafio 7 cat1 6,cat2 12 retorn cat1
+// Desafio 7 cat1 6,cat2 12 retorn cat1 
 function catAndMouse(mouse,cat1,cat2) {
- //let vCat1 = cat1 - mouse;
- //let vCat2 = cat2 - mouse;
-if (cat2 - mouse < cat1) {return cat2 = "cat2"}
-else if (cat1 - mouse < cat2) { return cat1 = "cat1" }
-else if ( cat1 == mouse && cat2 == mouse ) 
-{ return cat1 = 'os gatos trombam e o rato foge'}
+ let vCat1 = cat1 - mouse;
+ let vCat2 = cat2 - mouse;
+if (vCat1 < vCat2) {return  "cat1"}
+else if (vCat2 < vCat1) { return "cat2" }
+else { return 'os gatos trombam e o rato foge'}
 
-
+}
   //if(mouse < cat2 && mause < cat1){pegou =  console.log("cat1")}
 //else if (cat2 < cat1 && mause <= cat2){pegou = console.log("cat2")}
 //else if (cat1 == mause && cat2 == mause) {pegou = console.log("os gatos trombam e o rato foge")}
 //return pegou  
 // seu código aqui 
-}
+
 
 
 // Desafio 8
+//function addArray(...array){
+//console.log(array)
+//}
+//addArray(0,1,2,3)
 function fizzBuzz(array) {
   // seu código aqui
-  
+ //let array;
+ let string = []
+  for (let i = 0; i < array.length; i += 1){
+    if(array[i] % 3 === 0 && array[i] % 5 === 0){string.push("fizzBuzz")}
+    else if(array[i] % 3 === 0) {string.push("fizz")}  
+    else if(array[i] % 5 === 0){string.push("buzz")}
+    else string.push("bug!")
 }
+return string
+}
+//console.log(fizzBuzz([12,14,17,25,2]))
+// console.log(string)
+//fizzBuzz(3,5,15,14)
+//fizzBuzz()
 
 // Desafio 9
-function encode() {
+function encode(string) {
+
   // seu código aqui
 }
 function decode() {
@@ -112,8 +133,10 @@ function decode() {
 }
 
 // Desafio 10
+//["React", "Jest", "HTML", "CSS", "JavaScript"]
+//"Lucas"
 function techList() {
-  // seu código aqui
+  
 }
 
 module.exports = {
