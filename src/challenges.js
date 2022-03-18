@@ -121,18 +121,41 @@ function fizzBuzz(array) {
   }
   return string
 }
+
 //console.log(fizzBuzz([12,14,17,25,2]))
 // console.log(string)
 //fizzBuzz(3,5,15,14)
 //fizzBuzz()
 
 // Desafio 9
-function encode(string) {
+function encode(stri) {
+ let nostr = []; 
+  // seu código aqui // = O 4; 2=3 a=1 u=1
+for (let i = 0; i < stri.length; i += 1){
+  if (stri[i] == 'o'){nostr.push('4')}
+  else if (stri[i] == 'e'){nostr.push('2')}
+  else if (stri[i] == 'a'){nostr.push('1')}
+  else if (stri[i] == 'i'){nostr.push('3')}
+  else if (stri[i] == 'u'){nostr.push('5')}
+  else {nostr.push(stri[i])}  
+}   
+return nostr.join('')
 
-  // seu código aqui
 }
-function decode() {
+
+function decode(stri) {
   // seu código aqui
+  let nonum = []; 
+  // seu código aqui // = O 4; 2=3 a=1 u=1
+for (let i = 0; i < stri.length; i += 1){
+  if (stri[i] == '4'){nonum.push('o')}
+  else if (stri[i] == '2'){nonum.push('e')}
+  else if (stri[i] == '1'){nonum.push('a')}
+  else if (stri[i] == '3'){nonum.push('i')}
+  else if (stri[i] == '5'){nonum.push('u')}
+  else {nonum.push(stri[i])}  
+}   
+return nonum.join('')
 }
 
 // Desafio 10
